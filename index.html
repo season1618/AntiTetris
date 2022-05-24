@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <head prefix="og: http://ogp.me/ns#">
+    <meta property="og:url" content="https://season1618.github.io/AntiTetris"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Anti Tetris"/>
+    <meta property="og:image" content="https://season1618.github.io/AntiTetris/public/icon.png"/>
+    <link rel="icon" href="./public/icon.png"/>
+    <link rel="stylesheet" href="./index.css">
+    
+    <title>Anti Tetris</title>
+</head>
+<body>
+    <h2>Anti Tetris</h2>
+    <div id="gameplay">
+        <div class="name">
+            <label>Score:</label><br>
+            <label>Lines:</label><br>
+            <label>Level:</label>
+        </div>
+        <div class="value">
+            <label id="score">0</label><br>
+            <label id="lines">0</label><br>
+            <label id="level">0</label>
+        </div>
+        <canvas id="canvas"></canvas>
+        
+        <div id="wall"></div>
+        <div id="gamestart">
+            <div class="button-parent"><button id="start">play</button></div>
+        </div>
+        <div id="gameend">
+            <div class="button-parent"><button id="end">try again</button></div>
+        </div>
+    </div>      
+    <script src="./src/main.js"></script>
+</body>
+</html>
